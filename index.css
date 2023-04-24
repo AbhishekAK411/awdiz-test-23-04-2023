@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#screen{
+    width: 100%;
+    /* height: 1900px; */
+    /* border: 1px solid black; */
+}
+
+.navbar{
+    width: 100%;
+    height: 55px;
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+    background-color: rgb(40,116,240);
+}
+
+.inner-nav{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flipkart-logo{
+    width: 7%;
+    height: 90%;
+    /* border: 1px solid red; */
+}
+
+.flipkart-logo img{
+    width: 100%;
+    padding-top: 5px;
+}
+
+.flipkart-search{
+    width: 43%;
+    height: 90%;
+    /* border: 1px solid red; */
+    display: flex;
+    overflow: hidden;
+}
+
+.flipkart-search input{
+    width: 100%;
+    height: 90%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 0.9em;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+}
+
+.svg{
+    z-index: 1;
+    background-color: white;
+    height: 90%;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.flipkart-login{
+    width: 10%;
+    height: 90%;
+    margin-left: 2%;
+    /* border: 1px solid red; */
+}
+
+.flipkart-login button{
+    width: 100%;
+    height: 90%;
+    color: rgb(40,116,240);
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.flipkart-option{
+    width: 35%;
+    height: 90%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.flipkart-option p{
+    /* border: 1px solid red; */
+    width: 100%;
+    color: white;
+    align-self: center;
+    text-align: center;
+}
+
+.flipkart-option svg{
+    padding-top: 7px;
+}
+
+.logout-button{
+    width: 10%;
+    height: 90%;
+    /* border: 1px solid red; */
+}
+
+.logout-button button{
+    width: 100%;
+    height: 100%;
+    color: rgb(40,116,240);
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.main-content{
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid red; */
+    margin-top: 4%;
+    background-color: rgb(241,243,246);
+}
+
+.category{
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid red; */
+    box-shadow: 0 5px 10px rgb(0,0,0k,0.5);
+    background-color: white;
+    display: flex;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+}
+
+.category-image{
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-top{
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid red; */
+}
+
+.image-top img{
+    width: 100%;
+}
+
+.image-bot{
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+
+.Flipkart-banner{
+    width: 100%;
+    /* height: 225px; */
+    /* border: 1px solid red; */
+    margin-top: 2%;
+}
+
+.Flipkart-banner img{
+    width: 100%;
+}
+
+.products{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid red; */
+    margin-top: 1%;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+}
+
+.product-left{
+    width: 17%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    overflow: hidden;
+}
+
+.product-left img{
+    width: 100%;
+}
+
+.product-right{
+    width: 83%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.product-info{
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+}
+
+.product-image{
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.product-image img{
+    width: 100%;
+    scale: 0.95;
+}
+
+.product-image img:hover{
+    scale: 1.0001;
+    transition: 0.4s;
+}
+
+.product-desc{
+    width: 100%;
+    height: 25%;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.product-desc h5{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.product-desc p{
+    color: rgb(114,142,60);
+}
+
+.product-desc p:nth-child(3){
+    color: lightgrey;
+    padding-top: 5px;
+    font-size: 0.95em;
+    padding-left: 5px;
+}
+
+.products1{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid red; */
+    margin-top: 1%;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+}
+
+.product-left{
+    width: 17%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    overflow: hidden;
+}
+
+.product-left img{
+    width: 100%;
+}
+
+.product-right{
+    width: 83%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.product-info{
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+}
+
+.product-image{
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+.product-image img{
+    width: 100%;
+    scale: 0.95;
+}
+
+.product-image img:hover{
+    scale: 1.0001;
+    transition: 0.4s;
+}
+
+.product-desc{
+    width: 100%;
+    height: 25%;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.product-desc h5{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.product-desc p{
+    color: rgb(114,142,60);
+}
+
+.product-desc p:nth-child(3){
+    color: lightgrey;
+    padding-top: 5px;
+    font-size: 0.95em;
+    padding-left: 5px;
+}
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 350px;
+    /* border: 5px solid blue; */
+    background-color: rgb(23,35,55);
+    margin-top: 2%;
+}
+
+.footer-top{
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid yellow; */
+    display: flex;
+}
+
+.top-left{
+    width: 60%;
+    height: 100%;
+    border-right: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.same-heading{
+    width: 24%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    color: white;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+.same-heading h3{
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: rgb(121,122,101);
+    padding-bottom: 10px;
+}
+
+.same-heading p{
+    font-size: 0.75em;
+    padding-bottom: 10px;
+}
+
+.top-right{
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-bot{
+    width: 100%;
+    height: 20%;
+    border-top: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bot-sec{
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertise{
+    display: flex;
+    color: white;
+    text-align: center;
+    /* border: 1px solid red; */
+    align-self: center;
+}
+
+.advertise svg{
+    padding-right: 5px;
+    scale: 1.3;
+    padding-bottom: 10px;
+}
+
+.advertise p{
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+
+
+@media screen and (max-width: 560px){
+    .flipkart-logo{
+        width: 14%;
+    }
+
+    .navbar{
+        position: fixed;
+        z-index: 1;
+        top: 0;
+    }
+    
+    .flipkart-option{
+        display: none;
+    }
+    .flipkart-search{
+        width: 63%;
+    }
+    .flipkart-login{
+        width: 15%;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+
+    .top-left{
+        width: 100%;
+    }
+
+    .top-right{
+        display: none;
+    }
+
+    .advertise p{
+        font-size: 0.5em;
+    }
+
+    .category{
+        margin-top: 5%;
+        flex-wrap: wrap;
+    }
+
+    .category-image{
+        width: 20%;
+    }
+
+    .Flipkart-banner{
+        display: none;
+    }
+
+    .flipkart-login button{
+        font-size: 0.6em;
+    }
+
+    .products1{
+        margin-top: 35%;
+    }
+
+    .products{
+        margin-top: 10%;
+    }
+
+    .product-left{
+        display: none;
+    }
+
+    .product-right{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .product-info{
+        width: 20%;
+    }
+
+    .footer{
+        margin-top: 20%;
+    }
+
+    .logout-button{
+        display: none;
+    }
+
+    
+}
