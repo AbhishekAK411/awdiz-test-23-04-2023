@@ -17,7 +17,6 @@ function logout(event){
     event.preventDefault();
 
     var storage = JSON.parse(localStorage.getItem("flipkart_currrent_user"));
-    console.log(storage);
     if(storage){
         localStorage.removeItem("flipkart_current_user");
         window.location.href = `./login.html`;
